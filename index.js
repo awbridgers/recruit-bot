@@ -59,7 +59,7 @@ const Tweet = async () => {
     throw new Error(e.message);
   });
   const secondRes = await T.get('search/tweets', {
-    q: '"wake forest" -Sarr -sarr -turnovers -fouls -penalty -crimes -antiracist -antiracism -racism -Confederate -Confederates -turnover -foul -penalty -penalties -fraud -crime commit OR committed exclude:retweets exclude:replies',
+    q: '"wake forest" -turnovers -fouls -penalty -crimes -antiracist -antiracism -racism -Confederate -Confederates -turnover -foul -penalty -penalties -fraud -crime -"Sam Hartman" commit OR committed exclude:retweets exclude:replies',
     count: 100,
     result_type: 'recent',
   }).catch((e) => {
